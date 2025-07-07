@@ -1,71 +1,69 @@
-# Diabetes Indicator Prediction – Machine Learning Model
+# Diabetes Indicator Prediction Machine Learning Model
 
-This project uses machine learning to predict whether an individual is likely to have diabetes based on various health indicators. 
-The dataset is sourced from the CDC's Behavioral Risk Factor Surveillance System (BRFSS) and includes multiple health-related features.
+Predict diabetes likelihood based on CDC health indicators using Python and machine learning.
 
 ---
 
-## 📌 Project Goals
+## 🚀 Project Overview
 
-- Predict diabetes risk using machine learning models.
-- Perform data cleaning, exploration, and feature selection.
-- Evaluate model performance using classification metrics.
+This project aims to build and evaluate classification models that predict whether a person is diabetic using a health indicators dataset. It covers data cleaning, exploratory data analysis (EDA), model training, and model evaluation.
 
 ---
 
 ## 🧰 Tools & Technologies
 
-- **Language:** Python
-- **Libraries:** Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
-- **Algorithms:** Logistic Regression, Random Forest, Decision Tree
-- **Environment:** Jupyter Notebook / Google Colab
+- **Language:** Python  
+- **Libraries:** Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn  
+- **Models:** Logistic Regression, Decision Tree Classifier, Random Forest  
+- **Notebook Environment:** Jupyter Notebook (`diabetes_indicator.ipynb`)
 
 ---
 
-## 📊 Dataset
+## 📂 Dataset
 
-- Source: From UCI ML Repository, link: https://archive.ics.uci.edu/dataset/891/cdc+diabetes+health+indicators
-- Features include BMI, physical activity, general health, blood pressure, and more.
-- Target: `Diabetes_012` – indicating 0 (No diabetes), 1 (Pre-diabetes or Diabetes).
-
----
-
-## 🧪 Workflow
-
-1. **Data Preprocessing**
-   - Handle missing/null values
-   - Convert floats to integers
-   - Encode categorical variables if present
-
-2. **Exploratory Data Analysis (EDA)**
-   - Correlation matrix
-   - Visualizations using Matplotlib and Seaborn
-
-3. **Model Building**
-   - Train-test split
-   - Fit Logistic Regression, Random Forest, Decision Tree
-   - Hyperparameter tuning (if applied)
-
-4. **Evaluation**
-   - Accuracy, Precision, Recall, F1-score
-   - Confusion matrix
-   - ROC curve (optional)
+- Files included:
+  - `diabetes_binary_health_indicators.csv` (raw data)
+  - `cleaned_data.csv` (after preprocessing)
 
 ---
 
-## 📈 Results
+## 🧪 Project Workflow
 
-- Best Model: **Random Forest Classifier** (You can replace this if your best model is different)
-- Achieved Accuracy: ~XX% *(replace with your actual value)*
-- Important features: BMI, HighBP, Physical Activity, etc.
+1. **Data Preprocessing**  
+   - Loaded raw CSV  
+   - Handled missing values and data types  
+   - Created cleaned dataset (`cleaned_data.csv`)
+
+2. **Exploratory Data Analysis (EDA)**  
+   - Visualized distribution of features (e.g., BMI, Age, Physical activity)  
+   - Correlation matrix visualization
+
+3. **Model Training & Comparison**  
+   - Split data: train/test sets  
+   - Trained Logistic Regression, Decision Tree, Random Forest  
+   - Evaluated with accuracy, precision, recall, F1-score, and confusion matrix
+
+4. **Results & Insights**  
+   - **Best model:** Random Forest  
+   - Reported performance metrics  
+   - Highlighted important features (BMI, HighBP, HighChol)
 
 ---
 
-## 📂 File Structure
+## 📈 Performance Summary
 
-```bash
-📁 Diabetes-indicator-prediction-Machine-Learning-Model/
-├── diabetes_model.ipynb         # Main notebook
-├── dataset.csv                  # Dataset file (not uploaded if too large)
-├── requirements.txt             # Libraries needed (optional)
-└── README.md                    # Project documentation
+- **Best Model:** Random Forest Classifier (with SMOTE balancing)
+  - Accuracy: **88.66%**
+  - Precision: **89.25%**
+  - Recall: **87.93%**
+  - F1-Score: **88.59%**
+  - ROC-AUC Score: **95.34%**
+
+
+- **Feature Importance Analysis:**  
+  Key predictors: BMI, HighBP, HighChol, Physical Activity
+
+---
+
+
+
