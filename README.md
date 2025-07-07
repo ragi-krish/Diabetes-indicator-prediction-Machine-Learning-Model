@@ -24,7 +24,7 @@ The dataset is sourced from the CDC's Behavioral Risk Factor Surveillance System
 
 ## 📊 Dataset
 
-- Source: [CDC Diabetes Health Indicators Dataset](https://archive.ics.uci.edu/ml/datasets/diabetes+130-us+hospitals+for+years+1999-2008)
+- Source: From UCI ML Repository, link: https://archive.ics.uci.edu/dataset/891/cdc+diabetes+health+indicators
 - Features include BMI, physical activity, general health, blood pressure, and more.
 - Target: `Diabetes_012` – indicating 0 (No diabetes), 1 (Pre-diabetes or Diabetes).
 
