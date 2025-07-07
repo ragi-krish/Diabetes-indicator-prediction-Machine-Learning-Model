@@ -1,21 +1,25 @@
 # Diabetes Indicator Prediction Machine Learning Model
 
-Predict diabetes likelihood based on CDC health indicators using Python and machine learning.
+This project presents an end-to-end machine learning pipeline to predict whether an individual is likely to be diabetic based on health indicator data provided by the CDC. The project demonstrates practical skills in data cleaning, feature engineering, model evaluation, and model deployment using Python.
 
 ---
 
-## 🚀 Project Overview
+## 🎯 Project Objectives
 
-This project aims to build and evaluate classification models that predict whether a person is diabetic using a health indicators dataset. It covers data cleaning, exploratory data analysis (EDA), model training, and model evaluation.
+- Perform exploratory data analysis (EDA) on the CDC diabetes dataset.
+- Build a clean, reproducible pipeline from raw data ingestion to model serialization.
+- Evaluate multiple classification models and select the best-performing one.
+- Simulate production deployment using Joblib.
 
 ---
 
-## 🧰 Tools & Technologies
+## 🛠️ Tools & Technologies
 
-- **Language:** Python  
-- **Libraries:** Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn  
-- **Models:** Logistic Regression, Decision Tree Classifier, Random Forest  
-- **Notebook Environment:** Jupyter Notebook (`diabetes_indicator.ipynb`)
+- **Programming:** Python
+- **Libraries:** Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, imbalanced-learn (SMOTE)
+- **Modeling:** Logistic Regression, Decision Tree, Random Forest, Gradient Boosting
+- **Deployment:** Joblib
+- **Environment:** Jupyter Notebook / Google Colab
 
 ---
 
@@ -35,13 +39,17 @@ This project aims to build and evaluate classification models that predict wheth
    - Created cleaned dataset (`cleaned_data.csv`)
 
 2. **Exploratory Data Analysis (EDA)**  
-   - Visualized distribution of features (e.g., BMI, Age, Physical activity)  
-   - Correlation matrix visualization
+   - Visualized feature distributions and class imbalances.
+   - Identified correlations between key indicators (e.g., BMI, HighBP).
+   - Used pairplots, heatmaps, and value counts to understand the dataset.
 
-3. **Model Training & Comparison**  
-   - Split data: train/test sets  
-   - Trained Logistic Regression, Decision Tree, Random Forest  
-   - Evaluated with accuracy, precision, recall, F1-score, and confusion matrix
+3. **Model Building & Evaluation**  
+   - Accuracy
+  - Precision
+  - Recall
+  - F1-score
+  - ROC-AUC
+  - Used **SMOTE** to balance classes during training.
 
 4. **Results & Insights**  
    - **Best model:** Random Forest  
@@ -65,5 +73,8 @@ This project aims to build and evaluate classification models that predict wheth
 
 ---
 
+## 💾 Model Serialization
+
+- Saved the trained model using `joblib` for later deployment or inference.
 
 
